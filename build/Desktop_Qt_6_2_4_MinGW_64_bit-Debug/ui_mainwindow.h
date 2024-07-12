@@ -38,8 +38,11 @@ public:
     QPushButton *enterTourist;
     QPushButton *enterSecurity;
     QWidget *page_4;
-    QLabel *label_2;
-    QPushButton *exitsecurity;
+    QLabel *label_5;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_2;
+    QPushButton *changeMap;
+    QPushButton *exitSecurity;
     QWidget *page_5;
     QPushButton *exitTourist;
     QLabel *label_3;
@@ -91,18 +94,27 @@ public:
         stackedWidget->addWidget(page_3);
         page_4 = new QWidget();
         page_4->setObjectName(QString::fromUtf8("page_4"));
-        label_2 = new QLabel(page_4);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(330, 150, 301, 181));
-        label_2->setFont(font);
-        exitsecurity = new QPushButton(page_4);
-        exitsecurity->setObjectName(QString::fromUtf8("exitsecurity"));
-        exitsecurity->setGeometry(QRect(570, 400, 80, 18));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(exitsecurity->sizePolicy().hasHeightForWidth());
-        exitsecurity->setSizePolicy(sizePolicy1);
+        label_5 = new QLabel(page_4);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(70, 10, 521, 871));
+        label_5->setPixmap(QPixmap(QString::fromUtf8(":/Image/map.png")));
+        label_5->setScaledContents(true);
+        widget = new QWidget(page_4);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(670, 40, 201, 841));
+        verticalLayout_2 = new QVBoxLayout(widget);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        changeMap = new QPushButton(widget);
+        changeMap->setObjectName(QString::fromUtf8("changeMap"));
+
+        verticalLayout_2->addWidget(changeMap);
+
+        exitSecurity = new QPushButton(widget);
+        exitSecurity->setObjectName(QString::fromUtf8("exitSecurity"));
+
+        verticalLayout_2->addWidget(exitSecurity);
+
         stackedWidget->addWidget(page_4);
         page_5 = new QWidget();
         page_5->setObjectName(QString::fromUtf8("page_5"));
@@ -137,7 +149,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -152,8 +164,9 @@ public:
         label->setText(QCoreApplication::translate("MainWindow", "\345\257\274\346\270\270\347\263\273\347\273\237", nullptr));
         enterTourist->setText(QCoreApplication::translate("MainWindow", "\350\277\233\345\205\245\346\270\270\345\256\242\347\263\273\347\273\237", nullptr));
         enterSecurity->setText(QCoreApplication::translate("MainWindow", "\350\277\233\345\205\245\344\277\235\345\215\253\351\203\250\347\263\273\347\273\237", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "\344\277\235\345\215\253\351\203\250\347\263\273\347\273\237", nullptr));
-        exitsecurity->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272\344\277\235\345\215\253\351\203\250\347\263\273\347\273\237", nullptr));
+        label_5->setText(QString());
+        changeMap->setText(QCoreApplication::translate("MainWindow", "\344\277\256\346\224\271\345\234\260\345\233\276", nullptr));
+        exitSecurity->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272\344\277\235\345\215\253\351\203\250\347\263\273\347\273\237", nullptr));
         exitTourist->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272\346\270\270\345\256\242\347\263\273\347\273\237", nullptr));
         label_3->setText(QString());
         searchButton->setText(QCoreApplication::translate("MainWindow", "\346\237\245\350\257\242\350\267\257\345\276\204", nullptr));

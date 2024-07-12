@@ -11,15 +11,18 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    securitysystem.cpp \
     touristwindow.cpp
 
 HEADERS += \
     graph.h \
     mainwindow.h \
+    securitysystem.h \
     touristwindow.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    securitysystem.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

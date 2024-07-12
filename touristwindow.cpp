@@ -63,7 +63,7 @@ void TouristWindow::onQueryClicked()
         result += "\n";
     }
 
-    if (allPaths.empty()) {}
+    if (allPaths.empty()) {resultTextEdit->setText("起点或终点不存在");}
     else {
         result += "从" + start + "到" + end + "的所有路径:\n";
         std::vector<int> prevPath;
