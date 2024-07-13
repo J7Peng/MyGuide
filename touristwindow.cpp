@@ -8,7 +8,9 @@ TouristWindow::TouristWindow(Graph *graph, QWidget *parent)
 {
     QWidget *centralWidget = new QWidget(this);
 
-    setFixedSize(1000,800);
+    this->setWindowTitle("路线查询");
+
+    setFixedSize(626,402);
 
     QVBoxLayout *layout = new QVBoxLayout(centralWidget);
 

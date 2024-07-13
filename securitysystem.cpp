@@ -9,6 +9,8 @@ SecuritySystem::SecuritySystem(Graph *g,QWidget *parent) :
 {
     ui->setupUi(this);
 
+    setFixedSize(626,402);
+
     connect(ui->addEdgeBtn, &QPushButton::clicked, this, &SecuritySystem::addEdge);
     connect(ui->removeEdgeBtn, &QPushButton::clicked, this, &SecuritySystem::removeEdge);
     connect(ui->modifyEdgeBtn, &QPushButton::clicked, this, &SecuritySystem::modifyEdge);
