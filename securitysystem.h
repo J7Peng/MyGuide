@@ -20,7 +20,7 @@ public:
 
 
 private slots:
-    void addLocation();
+    // void addLocation();
     void addEdge();
     void removeEdge();
     void modifyEdge();

@@ -1,4 +1,5 @@
 #include "touristwindow.h"
+#include "ui_touristwindow.h"
 #include <QVBoxLayout>
 #include <QLabel>
 

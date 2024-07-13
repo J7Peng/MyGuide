@@ -7,8 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    setFixedSize(1000,980);
-
+    setFixedSize(1132,770);
 
     ui->stackedWidget->setCurrentIndex((0));
     //退出功能实现

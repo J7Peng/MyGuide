@@ -16,8 +16,8 @@ struct Edge {
 };
 
 struct Vertex {
-    Vertex(){};
-    Vertex(const std::string& n):name(n){};
+    Vertex(){}
+    Vertex(const std::string& n):name(n){}
     std::string name;
     std::vector<Edge> edges;
 };

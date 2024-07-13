@@ -1,5 +1,8 @@
 <RCC>
-    <qresource prefix="/">
-        <file>Image/map.png</file>
+    <qresource prefix="/imgs">
+        <file>Image/routegraph.jpg</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>Image/whu.ico</file>
     </qresource>
 </RCC>

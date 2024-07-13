@@ -25,7 +25,7 @@ QT_BEGIN_NAMESPACE
 class Ui_SecuritySystem
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QGridLayout *gridLayout_3;
     QHBoxLayout *horizontalLayout_2;
     QGridLayout *gridLayout;
@@ -50,11 +50,11 @@ public:
     {
         if (SecuritySystem->objectName().isEmpty())
             SecuritySystem->setObjectName(QString::fromUtf8("SecuritySystem"));
-        SecuritySystem->resize(626, 405);
-        widget = new QWidget(SecuritySystem);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 10, 601, 381));
-        gridLayout_3 = new QGridLayout(widget);
+        SecuritySystem->resize(626, 402);
+        layoutWidget = new QWidget(SecuritySystem);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 601, 381));
+        gridLayout_3 = new QGridLayout(layoutWidget);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_2 = new QHBoxLayout();
@@ -63,12 +63,12 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
 
-        locationNameInput = new QLineEdit(widget);
+        locationNameInput = new QLineEdit(layoutWidget);
         locationNameInput->setObjectName(QString::fromUtf8("locationNameInput"));
 
         horizontalLayout->addWidget(locationNameInput);
@@ -86,32 +86,32 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        srcLocationInput = new QLineEdit(widget);
+        srcLocationInput = new QLineEdit(layoutWidget);
         srcLocationInput->setObjectName(QString::fromUtf8("srcLocationInput"));
 
         gridLayout_2->addWidget(srcLocationInput, 0, 0, 1, 1);
 
-        destLocationInput = new QLineEdit(widget);
+        destLocationInput = new QLineEdit(layoutWidget);
         destLocationInput->setObjectName(QString::fromUtf8("destLocationInput"));
 
         gridLayout_2->addWidget(destLocationInput, 0, 1, 1, 1);
 
-        weightInput = new QLineEdit(widget);
+        weightInput = new QLineEdit(layoutWidget);
         weightInput->setObjectName(QString::fromUtf8("weightInput"));
 
         gridLayout_2->addWidget(weightInput, 0, 2, 1, 1);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         gridLayout_2->addWidget(label_2, 1, 0, 1, 1);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         gridLayout_2->addWidget(label_3, 1, 1, 1, 1);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         gridLayout_2->addWidget(label_4, 1, 2, 1, 1);
@@ -121,17 +121,17 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        addEdgeBtn = new QPushButton(widget);
+        addEdgeBtn = new QPushButton(layoutWidget);
         addEdgeBtn->setObjectName(QString::fromUtf8("addEdgeBtn"));
 
         verticalLayout->addWidget(addEdgeBtn);
 
-        removeEdgeBtn = new QPushButton(widget);
+        removeEdgeBtn = new QPushButton(layoutWidget);
         removeEdgeBtn->setObjectName(QString::fromUtf8("removeEdgeBtn"));
 
         verticalLayout->addWidget(removeEdgeBtn);
 
-        modifyEdgeBtn = new QPushButton(widget);
+        modifyEdgeBtn = new QPushButton(layoutWidget);
         modifyEdgeBtn->setObjectName(QString::fromUtf8("modifyEdgeBtn"));
 
         verticalLayout->addWidget(modifyEdgeBtn);
@@ -142,7 +142,7 @@ public:
 
         gridLayout_3->addLayout(horizontalLayout_3, 1, 0, 1, 1);
 
-        statusTextEdit = new QTextEdit(widget);
+        statusTextEdit = new QTextEdit(layoutWidget);
         statusTextEdit->setObjectName(QString::fromUtf8("statusTextEdit"));
 
         gridLayout_3->addWidget(statusTextEdit, 2, 0, 1, 1);
@@ -160,9 +160,9 @@ public:
         label_2->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2711", nullptr));
         label_3->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2712", nullptr));
         label_4->setText(QCoreApplication::translate("SecuritySystem", "\350\267\235\347\246\273", nullptr));
-        addEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "addEdgeBtn", nullptr));
-        removeEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "removeEdgeBtn", nullptr));
-        modifyEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "modifyEdgeBtn", nullptr));
+        addEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "\345\242\236\345\212\240\351\201\223\350\267\257", nullptr));
+        removeEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "\347\247\273\351\231\244\351\201\223\350\267\257", nullptr));
+        modifyEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "\344\277\256\346\224\271\351\201\223\350\267\257", nullptr));
     } // retranslateUi
 
 };

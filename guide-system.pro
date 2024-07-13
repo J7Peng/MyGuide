@@ -22,7 +22,8 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui \
-    securitysystem.ui
+    securitysystem.ui \
+    touristwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

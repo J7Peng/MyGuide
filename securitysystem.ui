@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>626</width>
-    <height>405</height>
+    <height>402</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -86,21 +86,21 @@
         <item>
          <widget class="QPushButton" name="addEdgeBtn">
           <property name="text">
-           <string>addEdgeBtn</string>
+           <string>增加道路</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="removeEdgeBtn">
           <property name="text">
-           <string>removeEdgeBtn</string>
+           <string>移除道路</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="modifyEdgeBtn">
           <property name="text">
-           <string>modifyEdgeBtn</string>
+           <string>修改道路</string>
           </property>
          </widget>
         </item>
