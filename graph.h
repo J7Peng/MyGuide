@@ -7,6 +7,8 @@
 #include <queue>
 #include <algorithm>
 #include <unordered_map>
+#include <unordered_set>
+#include<QDebug>
 
 struct Edge {
     int dest;
@@ -14,6 +16,8 @@ struct Edge {
 };
 
 struct Vertex {
+    Vertex(){}
+    Vertex(const std::string& n):name(n){}
     std::string name;
     std::vector<Edge> edges;
 };
@@ -23,8 +27,12 @@ public:
     Graph(int n) : vertices(n) {}
 
     void addVertex(int id, const std::string& name) {
-        vertices[id].name = name;
-        nameToId[name] = id;
+        if(id>=vertices.size()) vertices.push_back(Vertex(name));
+        else{
+            vertices[id].name = name;
+            nameToId[name] = id;
+        }
+        qDebug() << (int)vertices.size();
     }
 
     void addEdge(int src, int dest, int weight) {
@@ -61,7 +69,7 @@ public:
 
     std::string getVertexInfo(int id) const {
         if (id >= 0 && id < vertices.size()) {
-            return  vertices[id].name;
+            return vertices[id].name;
         }
         return "景点不存在";
     }
@@ -117,7 +125,6 @@ public:
             }
         }
 
-
         return next;
     }
 
@@ -151,19 +158,15 @@ public:
             return {};  // 返回空的 vector 表示没有路径
         }
 
+        std::unordered_set<std::string> uniquePaths;
         std::vector<std::vector<int>> allPaths;
         std::vector<int> path;
         std::vector<bool> visited(vertices.size(), false);
 
-        dfsAllPaths(startId, endId, visited, path, allPaths);
-
+        dfsAllPaths(startId, endId, visited, path, allPaths, uniquePaths);
 
         return allPaths;
     }
-
-private:
-    std::vector<Vertex> vertices;
-    std::unordered_map<std::string, int> nameToId;
 
     int getVertexIdByName(const std::string& name) const {
         auto it = nameToId.find(name);
@@ -173,22 +176,42 @@ private:
         return -1;
     }
 
-    void dfsAllPaths(int current, int end, std::vector<bool>& visited, std::vector<int>& path, std::vector<std::vector<int>>& allPaths) const {
+    int vertexCount() {
+        return vertices.size();
+    }
+
+private:
+    std::vector<Vertex> vertices;
+    std::unordered_map<std::string, int> nameToId;
+
+    void dfsAllPaths(int current, int end, std::vector<bool>& visited, std::vector<int>& path, std::vector<std::vector<int>>& allPaths, std::unordered_set<std::string>& uniquePaths) const {
         visited[current] = true;
         path.push_back(current);
 
         if (current == end) {
-            allPaths.push_back(path);
+            std::string pathKey = generatePathKey(path);
+            if (uniquePaths.find(pathKey) == uniquePaths.end()) {
+                uniquePaths.insert(pathKey);
+                allPaths.push_back(path);
+            }
         } else {
             for (const auto& edge : vertices[current].edges) {
                 if (!visited[edge.dest]) {
-                    dfsAllPaths(edge.dest, end, visited, path, allPaths);
+                    dfsAllPaths(edge.dest, end, visited, path, allPaths, uniquePaths);
                 }
             }
         }
 
         path.pop_back();
         visited[current] = false;
+    }
+
+    std::string generatePathKey(const std::vector<int>& path) const {
+        std::string key;
+        for (int vertex : path) {
+            key += std::to_string(vertex) + "-";
+        }
+        return key;
     }
 };
 

@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
+#include"securitysystem.h"
 #include <QMainWindow>
 #include "touristwindow.h"
 #include "graph.h"
@@ -19,12 +21,11 @@ public:
 
 private slots:
     void openTouristWindow();
-
 private:
     Ui::MainWindow *ui;
-    Graph *graph;
+    Graph * graph;
     TouristWindow *touristWindow;
-
+    SecuritySystem *securityWindow;
     QLabel *imageLabel;
     void loadImage(const QString &imagePath);
 };

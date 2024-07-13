@@ -1,14 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include"securitysystem.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    setFixedSize(1000,980);
-
+    setFixedSize(1132,770);
 
     ui->stackedWidget->setCurrentIndex((0));
     //退出功能实现
@@ -21,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex((1));
     });
 
+
+
     connect(ui->enterTourist,&QPushButton::clicked,this,[=](){
         ui->stackedWidget->setCurrentIndex((2));
     });
@@ -29,9 +30,11 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex((0));
     });
 
-    connect(ui->exitsecurity,&QPushButton::clicked,this,[=](){
+    connect(ui->exitSecurity,&QPushButton::clicked,this,[=](){
         ui->stackedWidget->setCurrentIndex((0));
     });
+
+
 
     // 初始化图
     graph = new Graph(20);
@@ -114,9 +117,15 @@ MainWindow::MainWindow(QWidget *parent)
     graph->addEdge(16, 19, 620);
     graph->addEdge(19, 16, 620);
 
+
+
     connect(ui->searchButton, &QPushButton::clicked, this, &MainWindow::openTouristWindow);
 
-
+    connect(ui->changeMap, &QPushButton::clicked,this,[&](){
+        securityWindow = new SecuritySystem(graph,this);
+        securityWindow->setAttribute(Qt::WA_DeleteOnClose);
+        securityWindow->show();
+    });
 
 }
 
@@ -125,6 +134,9 @@ MainWindow::~MainWindow()
     delete ui;
     delete graph;
 }
+
+
+
 
 void MainWindow::openTouristWindow()
 {
