@@ -6,8 +6,7 @@
 #include <QPushButton>
 #include <QTextEdit>
 #include "graph.h"
-#include<map>
-
+#include<QDebug>
 class TouristWindow : public QMainWindow
 {
     Q_OBJECT

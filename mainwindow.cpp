@@ -1,15 +1,17 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "securitysystem.h"
+#include "introduction.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    setFixedSize(1000,980);
+    setFixedSize(1132,770);
 
 
+    //主界面切换
     ui->stackedWidget->setCurrentIndex((0));
     //退出功能实现
     connect(ui->actionexit,&QAction::triggered,this,[=](){
@@ -21,6 +23,8 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex((1));
     });
 
+
+
     connect(ui->enterTourist,&QPushButton::clicked,this,[=](){
         ui->stackedWidget->setCurrentIndex((2));
     });
@@ -29,9 +33,10 @@ MainWindow::MainWindow(QWidget *parent)
         ui->stackedWidget->setCurrentIndex((0));
     });
 
-    connect(ui->exitsecurity,&QPushButton::clicked,this,[=](){
+    connect(ui->exitSecurity,&QPushButton::clicked,this,[=](){
         ui->stackedWidget->setCurrentIndex((0));
     });
+
 
     // 初始化图
     graph = new Graph(20);
@@ -114,9 +119,15 @@ MainWindow::MainWindow(QWidget *parent)
     graph->addEdge(16, 19, 620);
     graph->addEdge(19, 16, 620);
 
+
+
     connect(ui->searchButton, &QPushButton::clicked, this, &MainWindow::openTouristWindow);
 
-
+    connect(ui->changeMap, &QPushButton::clicked,this,[&](){
+        securityWindow = new SecuritySystem(graph,this);
+        securityWindow->setAttribute(Qt::WA_DeleteOnClose);
+        securityWindow->show();
+    });
 
 }
 
@@ -126,8 +137,168 @@ MainWindow::~MainWindow()
     delete graph;
 }
 
+
+
+
 void MainWindow::openTouristWindow()
 {
     touristWindow = new TouristWindow(graph, this);
     touristWindow->show();
 }
+
+void MainWindow::on_gongzhujiao_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showFirstLayer();
+    introwindow->show();
+}
+
+void MainWindow::on_yingyuan_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showSecondLayer();
+    introwindow->show();
+}
+
+void MainWindow::on_songyuancaochang_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showThirdLayer();
+    introwindow->show();
+}
+
+void MainWindow::on_jisuanjixueyuan_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showFourthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_guiyuancaochang_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showFifthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_jiuyiercaochang_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showSixthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_fengyuan_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showSeventhLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_leijunkejilou_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showEighthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_luojiaguangchang_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showNinthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_luojiashan_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showTenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_luojiamen_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showEleventhLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_xinghutiyuchang_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showTwelfthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_xintu_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showThirteenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_wanganxiaocaochang_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showFourteenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_xincao_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showFifteenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_shishe_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showSixteenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_guoruanc3_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showSeventeenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_xinxixuebuyijiao_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showEighteenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_nanermen_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showNineteenthLayer();
+    introwindow->show();
+}
+
+
+void MainWindow::on_luoyumen_clicked()
+{
+    introwindow = new Introduction(this);
+    introwindow->showTwentiethLayer();
+    introwindow->show();
+}
+

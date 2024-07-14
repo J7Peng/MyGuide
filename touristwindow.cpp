@@ -1,4 +1,5 @@
 #include "touristwindow.h"
+#include "ui_touristwindow.h"
 #include <QVBoxLayout>
 #include <QLabel>
 
@@ -7,7 +8,9 @@ TouristWindow::TouristWindow(Graph *graph, QWidget *parent)
 {
     QWidget *centralWidget = new QWidget(this);
 
-    setFixedSize(1000,800);
+    this->setWindowTitle("路线查询");
+
+    setFixedSize(626,402);
 
     QVBoxLayout *layout = new QVBoxLayout(centralWidget);
 
@@ -63,7 +66,7 @@ void TouristWindow::onQueryClicked()
         result += "\n";
     }
 
-    if (allPaths.empty()) {}
+    if (allPaths.empty()) {resultTextEdit->setText("起点或终点不存在");}
     else {
         result += "从" + start + "到" + end + "的所有路径:\n";
         std::vector<int> prevPath;
