@@ -98,7 +98,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) WHU_CampusGuide.zip $(SOURCES) $(DIST) ..\..\WHU_CampusGuide.pro G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\spec_pre.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\device_config.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\sanitize.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\gcc-base.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\g++-base.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\windows-vulkan.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\g++-win32.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\windows-desktop.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\qconfig.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_ext_freetype.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_ext_libpng.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_charts.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_charts_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_help.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_help_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimedia.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_network.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_network_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldevtools_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_tools_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qt_functions.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qt_config.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\win32-g++\qmake.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\spec_post.prf .qmake.stash G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\exclusive_builds.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\toolchain.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\default_pre.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\default_pre.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\resolve_config.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\exclusive_builds_post.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\default_post.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\build_pass.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qml_debug.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\entrypoint.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\precompile_header.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\warn_on.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qt.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\resources_functions.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\resources.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\moc.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\opengl.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\uic.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qmake_use.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\file_copies.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\windows.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\testcase_targets.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\exceptions.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\yacc.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\lex.prf ..\..\WHU_CampusGuide.pro ..\..\res.qrc G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6Widgets.prl G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6Gui.prl G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6Core.prl G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6EntryPoint.prl   ..\..\res.qrc G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\data\dummy.cpp ..\..\graph.h ..\..\introduction.h ..\..\mainwindow.h ..\..\securitysystem.h ..\..\touristwindow.h  ..\..\introduction.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\securitysystem.cpp ..\..\touristwindow.cpp ..\..\introduction.ui ..\..\mainwindow.ui ..\..\securitysystem.ui ..\..\touristwindow.ui    
+	$(ZIP) WHU_CampusGuide.zip $(SOURCES) $(DIST) ..\..\..\..\WHU_CampusGuide.pro G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\spec_pre.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\device_config.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\sanitize.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\gcc-base.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\g++-base.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\windows-vulkan.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\g++-win32.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\common\windows-desktop.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\qconfig.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_ext_freetype.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_ext_libpng.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_charts.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_charts_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_core_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_help.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_help_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimedia.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_network.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_network_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldevtools_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_tools_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qt_functions.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qt_config.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\win32-g++\qmake.conf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\spec_post.prf .qmake.stash G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\exclusive_builds.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\toolchain.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\default_pre.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\default_pre.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\resolve_config.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\exclusive_builds_post.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\default_post.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\build_pass.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qml_debug.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\entrypoint.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\precompile_header.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\warn_on.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qt.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\resources_functions.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\resources.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\moc.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\opengl.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\uic.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\qmake_use.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\file_copies.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\win32\windows.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\testcase_targets.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\exceptions.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\yacc.prf G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\lex.prf ..\..\WHU_CampusGuide.pro ..\..\res.qrc G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6Widgets.prl G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6Gui.prl G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6Core.prl G:\Download\Qt4.5.2\6.2.4\mingw_64\lib\Qt6EntryPoint.prl   ..\..\res.qrc G:\Download\Qt4.5.2\6.2.4\mingw_64\mkspecs\features\data\dummy.cpp ..\..\graph.h ..\..\introduction.h ..\..\mainwindow.h ..\..\securitysystem.h ..\..\touristwindow.h  ..\..\introduction.cpp ..\..\main.cpp ..\..\mainwindow.cpp ..\..\securitysystem.cpp ..\..\touristwindow.cpp ..\..\introduction.ui ..\..\mainwindow.ui ..\..\securitysystem.ui ..\..\touristwindow.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) release\introduction.o release\main.o release\mainwindow.o release\securitysystem.o release\touristwindow.o release\qrc_res.o release\moc_introduction.o release\moc_mainwindow.o release\moc_securitysystem.o release\moc_touristwindow.o
@@ -124,26 +124,26 @@ compiler_rcc_clean:
 release/qrc_res.cpp: ../../res.qrc \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/bin/rcc.exe \
 		../../Image/luojiamen.jpg \
-		../../Image/sishitang.jpg \
 		../../Image/yingyuan.jpg \
 		../../Image/xinxixuebuyijiao.jpg \
 		../../Image/songyuancaochang.jpg \
 		../../Image/xinghutiyuchang.jpg \
+		../../Image/xincao.jpg \
 		../../Image/guoruanc3.jpg \
 		../../Image/luojiashan.jpg \
 		../../Image/gongzhujiao.jpg \
+		../../Image/xintu.jpg \
+		../../Image/shishe.jpg \
 		../../Image/routegraph.jpg \
-		../../Image/xinxixuebucaochang.jpg \
 		../../Image/nanermen.jpg \
-		../../Image/tushuguan.jpg \
 		../../Image/jiuyiercaochang.jpg \
+		../../Image/wanganxiaocaochang.jpg \
 		../../Image/jisuanjixueyuan.jpg \
 		../../Image/leijunkejilou.jpg \
 		../../Image/luojiaguangchang.jpg \
 		../../Image/luoyumen.jpg \
 		../../Image/guiyuancaochang.jpg \
 		../../Image/fengyuan.jpg \
-		../../Image/wangancaochang.jpg \
 		../../Image/whu.ico
 	G:\Download\Qt4.5.2\6.2.4\mingw_64\bin\rcc.exe -name res ..\..\res.qrc -o release\qrc_res.cpp
 
@@ -895,7 +895,37 @@ release/introduction.o: ../../introduction.cpp ../../introduction.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QSizeF \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/QTransform \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
-		ui_introduction.h
+		ui_introduction.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QVariant \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthread.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qexception.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QStackedWidget \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qstackedwidget.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\introduction.o ..\..\introduction.cpp
 
 release/main.o: ../../main.cpp ../../mainwindow.h \
@@ -1229,7 +1259,46 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QLabel \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qpicture.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QVariant \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/QAction \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qaction.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/QIcon \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthread.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qexception.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QMenu \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QStackedWidget \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qstackedwidget.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QVBoxLayout \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qboxlayout.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlayout.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlayoutitem.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qgridlayout.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\mainwindow.cpp
 
 release/securitysystem.o: ../../securitysystem.cpp ../../securitysystem.h \
@@ -1365,6 +1434,53 @@ release/securitysystem.o: ../../securitysystem.cpp ../../securitysystem.h \
 		../../graph.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QDebug \
 		ui_securitysystem.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QVariant \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthread.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qexception.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QGridLayout \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qgridlayout.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlayout.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlayoutitem.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qboxlayout.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QHBoxLayout \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QLineEdit \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlineedit.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qtextcursor.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qtextformat.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qpen.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qtextoption.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QTextEdit \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qtextedit.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QVBoxLayout \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QWidget \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QMessageBox \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qmessagebox.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qdialog.h
@@ -1517,6 +1633,35 @@ release/touristwindow.o: ../../touristwindow.cpp ../../touristwindow.h \
 		../../graph.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QDebug \
 		ui_touristwindow.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/QVariant \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qthread.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qexception.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtGui/qaction.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
+		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QWidget \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/QVBoxLayout \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qboxlayout.h \
 		G:/Download/Qt4.5.2/6.2.4/mingw_64/include/QtWidgets/qlayout.h \
