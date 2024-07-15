@@ -180,6 +180,10 @@ public:
         return vertices.size();
     }
 
+    int getDist(int vert1, int vert2){
+        return vertices[vert1].edges[vert2].weight;
+    }
+
 private:
     std::vector<Vertex> vertices;
     std::unordered_map<std::string, int> nameToId;

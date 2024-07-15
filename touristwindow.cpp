@@ -63,6 +63,16 @@ void TouristWindow::onQueryClicked()
                 result += " -> ";
             }
         }
+        result += "；    最短路径距离为：";
+        int dist=0;
+        std::vector<int>::iterator vert1 = shortestPath.begin();
+        std::vector<int>::iterator vert2 = vert1++;
+        for(int i=1;i<shortestPath.size();i++){
+            dist += graph->getDist(*vert1,*vert2);
+            vert1++;
+            vert2++;
+        }
+        result += QString::number(dist);
         result += "\n";
     }
 

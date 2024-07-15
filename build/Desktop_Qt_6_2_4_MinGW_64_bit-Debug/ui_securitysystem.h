@@ -30,8 +30,6 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout;
-    QLabel *label;
-    QLineEdit *locationNameInput;
     QHBoxLayout *horizontalLayout_3;
     QGridLayout *gridLayout_2;
     QLineEdit *srcLocationInput;
@@ -63,16 +61,6 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(layoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        horizontalLayout->addWidget(label);
-
-        locationNameInput = new QLineEdit(layoutWidget);
-        locationNameInput->setObjectName(QString::fromUtf8("locationNameInput"));
-
-        horizontalLayout->addWidget(locationNameInput);
-
 
         gridLayout->addLayout(horizontalLayout, 0, 0, 1, 2);
 
@@ -156,7 +144,6 @@ public:
     void retranslateUi(QWidget *SecuritySystem)
     {
         SecuritySystem->setWindowTitle(QCoreApplication::translate("SecuritySystem", "\351\201\223\350\267\257\344\277\241\346\201\257\345\217\230\346\233\264", nullptr));
-        label->setText(QCoreApplication::translate("SecuritySystem", "\344\277\256\346\224\271\345\234\260\347\202\271\345\220\215\347\247\260", nullptr));
         label_2->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2711", nullptr));
         label_3->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2712", nullptr));
         label_4->setText(QCoreApplication::translate("SecuritySystem", "\350\267\235\347\246\273", nullptr));
