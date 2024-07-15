@@ -13,14 +13,14 @@
         <file>Image/luojiashan.jpg</file>
         <file>Image/luoyumen.jpg</file>
         <file>Image/nanermen.jpg</file>
-        <file>Image/sishitang.jpg</file>
         <file>Image/songyuancaochang.jpg</file>
-        <file>Image/tushuguan.jpg</file>
-        <file>Image/wangancaochang.jpg</file>
         <file>Image/xinghutiyuchang.jpg</file>
-        <file>Image/xinxixuebucaochang.jpg</file>
         <file>Image/xinxixuebuyijiao.jpg</file>
         <file>Image/yingyuan.jpg</file>
+        <file>Image/xintu.jpg</file>
+        <file>Image/wanganxiaocaochang.jpg</file>
+        <file>Image/xincao.jpg</file>
+        <file>Image/shishe.jpg</file>
     </qresource>
     <qresource prefix="/icons">
         <file>Image/whu.ico</file>
