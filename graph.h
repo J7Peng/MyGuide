@@ -40,31 +40,34 @@ public:
         vertices[dest].edges.push_back({src, weight});
     }
 
-    void removeEdge(int src, int dest) {
+    bool removeEdge(int src, int dest) {
         auto &srcEdges = vertices[src].edges;
-        srcEdges.erase(std::remove_if(srcEdges.begin(), srcEdges.end(), [dest](const Edge &edge) {
-                           return edge.dest == dest;
-                       }), srcEdges.end());
+        if(srcEdges.erase(std::remove_if(srcEdges.begin(), srcEdges.end(), [dest](const Edge &edge) {return edge.dest == dest;}), srcEdges.end())!=srcEdges.end()) return true;
 
         auto &destEdges = vertices[dest].edges;
-        destEdges.erase(std::remove_if(destEdges.begin(), destEdges.end(), [src](const Edge &edge) {
+        if(destEdges.erase(std::remove_if(destEdges.begin(), destEdges.end(), [src](const Edge &edge) {
                             return edge.dest == src;
-                        }), destEdges.end());
+                            }), destEdges.end())!=destEdges.end()) return true;
+
+        return false;
     }
 
-    void modifyEdge(int src, int dest, int newWeight) {
-        for (auto &edge : vertices[src].edges) {
-            if (edge.dest == dest) {
-                edge.weight = newWeight;
+    bool modifyEdge(int src, int dest, int newWeight) {
+        int i=0;
+        for (;i< vertices[src].edges.size();i++ ) {
+            if (vertices[src].edges[i].dest == dest) {
+                vertices[src].edges[i].weight = newWeight;
                 break;
             }
         }
-        for (auto &edge : vertices[dest].edges) {
-            if (edge.dest == src) {
-                edge.weight = newWeight;
+        i=0;
+        for (;i< vertices[dest].edges.size();i++ ) {
+            if ( vertices[dest].edges[i].dest == src) {
+                 vertices[dest].edges[i].weight = newWeight;
                 break;
             }
         }
+        return !(i==vertices[dest].edges.size());
     }
 
     std::string getVertexInfo(int id) const {

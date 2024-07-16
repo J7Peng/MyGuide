@@ -2,14 +2,16 @@
 #include "ui_securitysystem.h"
 #include <QMessageBox>
 
-SecuritySystem::SecuritySystem(Graph *g,QWidget *parent) :
+SecuritySystem::SecuritySystem(Graph *g,QWidget *parent,QString *change) :
     QMainWindow(parent),
     ui(new Ui::SecuritySystem),
     graph(g)
+    ,changes0(change)
 {
     ui->setupUi(this);
 
     setFixedSize(626,402);
+    move(780,185);
 
     connect(ui->addEdgeBtn, &QPushButton::clicked, this, &SecuritySystem::addEdge);
     connect(ui->removeEdgeBtn, &QPushButton::clicked, this, &SecuritySystem::removeEdge);
@@ -31,7 +33,10 @@ void SecuritySystem::addEdge() {
         return;
     }
     graph->addEdge(srcId, destId, weight);
-    ui->statusTextEdit->append("添加路径: " + srcName + " -> " + destName + " 重量: " + QString::number(weight));
+    ui->statusTextEdit->append("添加新路径: " + srcName + " <-> " + destName + " 距离: " + QString::number(weight));
+    QString change = "新路径: " + srcName + " <-> " + destName + " 距离: " + QString::number(weight);
+    *changes0 += change + "\n";
+
 }
 
 void SecuritySystem::removeEdge() {
@@ -43,8 +48,12 @@ void SecuritySystem::removeEdge() {
         displayError("无效的地点名称！");
         return;
     }
-    graph->removeEdge(srcId, destId);
-    ui->statusTextEdit->append("删除路径: " + srcName + " -> " + destName);
+    if(graph->removeEdge(srcId, destId)){
+        ui->statusTextEdit->append("删除路径: " + srcName + " -> " + destName);
+        QString change = "道路不通 " + srcName + " <-> " + destName ;
+        *changes0 += change + "\n";
+    }
+    else ui->statusTextEdit->append("删除不成功，无直达路径！");
 }
 
 void SecuritySystem::modifyEdge() {
@@ -57,8 +66,12 @@ void SecuritySystem::modifyEdge() {
         displayError("无效的地点名称！");
         return;
     }
-    graph->modifyEdge(srcId, destId, newWeight);
-    ui->statusTextEdit->append("修改路径: " + srcName + " -> " + destName + " 新重量: " + QString::number(newWeight));
+    if (graph->modifyEdge(srcId, destId, newWeight)){
+        ui->statusTextEdit->append("修改现有路径: " + srcName + " <-> " + destName + " 新距离: " + QString::number(newWeight));
+        QString change = "路径已重新修建: " + srcName + " <-> " + destName + " 距离: " + QString::number(newWeight);
+        *changes0 += change + "\n";
+    }
+    else ui->statusTextEdit->append("修改不成功，无直达路径！");
 }
 
 void SecuritySystem::displayError(const QString &message) {
