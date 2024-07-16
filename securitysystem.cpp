@@ -20,8 +20,6 @@ SecuritySystem::SecuritySystem(Graph *g,QWidget *parent,QString *change) :
 
 }
 
-
-
 void SecuritySystem::addEdge() {
     QString srcName = ui->srcLocationInput->text();
     QString destName = ui->destLocationInput->text();

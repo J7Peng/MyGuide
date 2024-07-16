@@ -78,11 +78,12 @@ private slots:
     void on_luoyumen_clicked();
 
 private:
+    QString *changes;
 
     QLabel *backgroundLabel;
     QStringList images;
     int currentIndex;
-    QString *changes;
+
     Ui::MainWindow *ui;
     Graph * graph;
     TouristWindow *touristWindow;

@@ -67,13 +67,11 @@ MainWindow::MainWindow(QWidget *parent)
         updateAnnouncementTextEdit();
     });
 
-    changes= new QString("");
-
-
 
 
     // 初始化图
     graph = new Graph(20);
+     changes= new QString("");
 
 
     // 添加顶点和边
