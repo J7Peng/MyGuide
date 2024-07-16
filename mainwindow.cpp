@@ -174,7 +174,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::updateAnnouncementTextEdit() {
-    ui->anouncementtextEdit->append(*changes);
+    ui->anouncementtextEdit->setText(*changes);
 }
 
 void MainWindow::changeBackground() {
