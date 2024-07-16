@@ -2,13 +2,41 @@
 #include "ui_mainwindow.h"
 #include "securitysystem.h"
 #include "introduction.h"
+#include<QPropertyAnimation>
+#include<QPainter>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    ,currentIndex(0)
 {
     ui->setupUi(this);
 
     setFixedSize(1132,770);
+
+    ui->anouncementtextEdit->setStyleSheet("background-color: rgba(255, 255, 255, 128);");
+
+    images << ":/imgs/Image/fengyuan.jpg"<< ":/imgs/Image/luojiashan.jpg"<< ":/imgs/Image/yingyuan.jpg"<< ":/imgs/Image/guiyuancaochang.jpg";
+
+    backgroundLabel = new QLabel(this);
+    backgroundLabel->setGeometry(0, 0, this->width(), this->height());
+    backgroundLabel->setScaledContents(true);
+    backgroundLabel->lower(); // 将标签置于底层
+
+    // 设置透明度
+    QGraphicsOpacityEffect *opacityEffect = new QGraphicsOpacityEffect;
+    opacityEffect->setOpacity(0.3); // 30%透明度
+    backgroundLabel->setGraphicsEffect(opacityEffect);
+
+    // 设置定时器
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &MainWindow::changeBackground);
+    timer->start(20000); // 每20秒触发一次
+
+    // 初始设置背景图片
+    changeBackground();
+
+
+
 
 
     //主界面切换
@@ -31,15 +59,20 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->exitTourist,&QPushButton::clicked,this,[=](){
         ui->stackedWidget->setCurrentIndex((0));
+        updateAnnouncementTextEdit();
     });
 
     connect(ui->exitSecurity,&QPushButton::clicked,this,[=](){
         ui->stackedWidget->setCurrentIndex((0));
+        updateAnnouncementTextEdit();
     });
+
 
 
     // 初始化图
     graph = new Graph(20);
+     changes= new QString("");
+
 
     // 添加顶点和边
     graph->addVertex(0, "南2门");
@@ -123,26 +156,74 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->searchButton, &QPushButton::clicked, this, &MainWindow::openTouristWindow);
 
-    connect(ui->changeMap, &QPushButton::clicked,this,[&](){
-        securityWindow = new SecuritySystem(graph,this);
-        securityWindow->setAttribute(Qt::WA_DeleteOnClose);
-        securityWindow->show();
-    });
+    connect(ui->changeMap, &QPushButton::clicked,this,&MainWindow::openSecurityWindow);
 
 }
 
+void MainWindow::openSecurityWindow(){
+    securityWindow = new SecuritySystem(graph,this,changes);
+    securityWindow->setAttribute(Qt::WA_DeleteOnClose);
+    securityWindow->show();
+}
 MainWindow::~MainWindow()
 {
     delete ui;
     delete graph;
+    delete changes;
+    delete backgroundLabel;
 }
 
+void MainWindow::updateAnnouncementTextEdit() {
+    ui->anouncementtextEdit->append(*changes);
+}
+
+void MainWindow::changeBackground() {
+    if (currentIndex >= images.size()) {
+        currentIndex = 0;
+    }
+
+
+
+    // 创建新的 QPixmap
+    QPixmap newPixmap(images[currentIndex]);
+
+    // 创建 QGraphicsOpacityEffect
+    QGraphicsOpacityEffect *opacityEffect = new QGraphicsOpacityEffect(backgroundLabel);
+    backgroundLabel->setGraphicsEffect(opacityEffect);
+
+    // 创建动画对象
+    QPropertyAnimation *animation = new QPropertyAnimation(opacityEffect, "opacity");
+    animation->setDuration(2000); // 渐变时间
+    animation->setStartValue(0.0); // 开始时完全不透明
+    animation->setEndValue(0.3);   // 渐变
+
+    QPropertyAnimation *animationWait = new QPropertyAnimation(opacityEffect, "opacity");
+    animationWait->setDuration(16000);
+    animationWait->setStartValue(0.3);
+    animationWait->setEndValue(0.3);
+
+    QPropertyAnimation *animationFade = new QPropertyAnimation(opacityEffect, "opacity");
+    animationFade->setDuration(2000);
+    animationFade->setStartValue(0.3);
+    animationFade->setEndValue(0.0);
+
+    // 切换背景图片
+    QSequentialAnimationGroup *animationGroup = new QSequentialAnimationGroup;
+    animationGroup->addAnimation(animation);
+    animationGroup->addAnimation(animationWait);
+    animationGroup->addAnimation(animationFade);
+    animationGroup->start(QAbstractAnimation::DeleteWhenStopped);
+
+    backgroundLabel->setPixmap(newPixmap);
+    currentIndex++;
+}
 
 
 
 void MainWindow::openTouristWindow()
 {
     touristWindow = new TouristWindow(graph, this);
+    securityWindow->setAttribute(Qt::WA_DeleteOnClose);
     touristWindow->show();
 }
 

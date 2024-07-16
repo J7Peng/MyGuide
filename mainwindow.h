@@ -1,13 +1,17 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-
+#include <QTimer>
+#include <QLabel>
+#include <QPixmap>
+#include <QGraphicsOpacityEffect>
 #include"securitysystem.h"
 #include <QMainWindow>
 #include "touristwindow.h"
 #include "introduction.h"
 #include "graph.h"
 #include <QLabel>
+#include<QSequentialAnimationGroup>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -20,7 +24,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
+    QTextEdit *text;
+
+
 private slots:
+    void updateAnnouncementTextEdit();
+
+    void changeBackground();
+
+    void openSecurityWindow();
+
     void openTouristWindow();
 
     void on_gongzhujiao_clicked();
@@ -64,6 +78,12 @@ private slots:
     void on_luoyumen_clicked();
 
 private:
+    QString *changes;
+
+    QLabel *backgroundLabel;
+    QStringList images;
+    int currentIndex;
+
     Ui::MainWindow *ui;
     Graph * graph;
     TouristWindow *touristWindow;

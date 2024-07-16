@@ -12,6 +12,7 @@ TouristWindow::TouristWindow(Graph *graph, QWidget *parent)
     this->setWindowTitle("路线查询");
 
     setFixedSize(626,402);
+    move(785,185);
 
     QVBoxLayout *layout = new QVBoxLayout(centralWidget);
 

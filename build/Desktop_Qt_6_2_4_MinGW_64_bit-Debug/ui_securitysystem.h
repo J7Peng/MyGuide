@@ -30,16 +30,14 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QGridLayout *gridLayout;
     QHBoxLayout *horizontalLayout;
-    QLabel *label;
-    QLineEdit *locationNameInput;
     QHBoxLayout *horizontalLayout_3;
     QGridLayout *gridLayout_2;
-    QLineEdit *srcLocationInput;
     QLineEdit *destLocationInput;
     QLineEdit *weightInput;
     QLabel *label_2;
-    QLabel *label_3;
+    QLineEdit *srcLocationInput;
     QLabel *label_4;
+    QLabel *label_3;
     QVBoxLayout *verticalLayout;
     QPushButton *addEdgeBtn;
     QPushButton *removeEdgeBtn;
@@ -63,16 +61,6 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(layoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        horizontalLayout->addWidget(label);
-
-        locationNameInput = new QLineEdit(layoutWidget);
-        locationNameInput->setObjectName(QString::fromUtf8("locationNameInput"));
-
-        horizontalLayout->addWidget(locationNameInput);
-
 
         gridLayout->addLayout(horizontalLayout, 0, 0, 1, 2);
 
@@ -86,11 +74,6 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        srcLocationInput = new QLineEdit(layoutWidget);
-        srcLocationInput->setObjectName(QString::fromUtf8("srcLocationInput"));
-
-        gridLayout_2->addWidget(srcLocationInput, 0, 0, 1, 1);
-
         destLocationInput = new QLineEdit(layoutWidget);
         destLocationInput->setObjectName(QString::fromUtf8("destLocationInput"));
 
@@ -106,15 +89,20 @@ public:
 
         gridLayout_2->addWidget(label_2, 1, 0, 1, 1);
 
-        label_3 = new QLabel(layoutWidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        srcLocationInput = new QLineEdit(layoutWidget);
+        srcLocationInput->setObjectName(QString::fromUtf8("srcLocationInput"));
 
-        gridLayout_2->addWidget(label_3, 1, 1, 1, 1);
+        gridLayout_2->addWidget(srcLocationInput, 0, 0, 1, 1);
 
         label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         gridLayout_2->addWidget(label_4, 1, 2, 1, 1);
+
+        label_3 = new QLabel(layoutWidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        gridLayout_2->addWidget(label_3, 1, 1, 1, 1);
 
 
         horizontalLayout_3->addLayout(gridLayout_2);
@@ -144,6 +132,7 @@ public:
 
         statusTextEdit = new QTextEdit(layoutWidget);
         statusTextEdit->setObjectName(QString::fromUtf8("statusTextEdit"));
+        statusTextEdit->setFocusPolicy(Qt::NoFocus);
 
         gridLayout_3->addWidget(statusTextEdit, 2, 0, 1, 1);
 
@@ -156,10 +145,9 @@ public:
     void retranslateUi(QWidget *SecuritySystem)
     {
         SecuritySystem->setWindowTitle(QCoreApplication::translate("SecuritySystem", "\351\201\223\350\267\257\344\277\241\346\201\257\345\217\230\346\233\264", nullptr));
-        label->setText(QCoreApplication::translate("SecuritySystem", "\344\277\256\346\224\271\345\234\260\347\202\271\345\220\215\347\247\260", nullptr));
         label_2->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2711", nullptr));
-        label_3->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2712", nullptr));
         label_4->setText(QCoreApplication::translate("SecuritySystem", "\350\267\235\347\246\273", nullptr));
+        label_3->setText(QCoreApplication::translate("SecuritySystem", "\345\234\260\347\202\2712", nullptr));
         addEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "\345\242\236\345\212\240\351\201\223\350\267\257", nullptr));
         removeEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "\347\247\273\351\231\244\351\201\223\350\267\257", nullptr));
         modifyEdgeBtn->setText(QCoreApplication::translate("SecuritySystem", "\344\277\256\346\224\271\351\201\223\350\267\257", nullptr));
