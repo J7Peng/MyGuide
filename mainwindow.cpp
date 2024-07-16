@@ -174,7 +174,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::updateAnnouncementTextEdit() {
-    ui->anouncementtextEdit->append(*changes);
+    ui->anouncementtextEdit->setText(*changes);
 }
 
 void MainWindow::changeBackground() {
@@ -223,7 +223,7 @@ void MainWindow::changeBackground() {
 void MainWindow::openTouristWindow()
 {
     touristWindow = new TouristWindow(graph, this);
-    securityWindow->setAttribute(Qt::WA_DeleteOnClose);
+    touristWindow->setAttribute(Qt::WA_DeleteOnClose);
     touristWindow->show();
 }
 
